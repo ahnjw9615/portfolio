@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class IndexpageSub2 extends StatefulWidget {
-  const IndexpageSub2({super.key});
+class Indexpage2 extends StatefulWidget {
+  const Indexpage2({super.key});
 
   @override
-  State<IndexpageSub2> createState() => _IndexpageSub2State();
+  State<Indexpage2> createState() => _Indexpage2State();
 }
 
-class _IndexpageSub2State extends State<IndexpageSub2> {
+class _Indexpage2State extends State<Indexpage2> {
   @override
   Widget build(BuildContext context) {
     final shortScreenSize = MediaQuery.of(context).size.shortestSide;

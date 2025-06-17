@@ -12,9 +12,9 @@ class _IndexpageState extends State<Indexpage> {
   Widget build(BuildContext context) {
     final shortScreenSize = MediaQuery.of(context).size.shortestSide;
     double fontSizeSmall = shortScreenSize * 0.022;
-    double fontSizeSemiMedium = shortScreenSize * 0.048;
     double fontSizeMedium = shortScreenSize * 0.05;
     double fontSizeLarge = shortScreenSize * 0.09;
+    double fontSizeExtraLarge = shortScreenSize * 0.13;
 
     return Container(
       color: Color.fromRGBO(247, 247, 247, 1),
@@ -34,9 +34,9 @@ class _IndexpageState extends State<Indexpage> {
                     style: TextStyle(
                       fontSize: fontSizeLarge,
                       fontFamily: "OpenSansCondensed",
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w300,
                       color: Colors.black87,
-                      letterSpacing: 0.8,
+                      letterSpacing: 0.5,
                     ),
                   ),
                 ),
@@ -53,7 +53,7 @@ class _IndexpageState extends State<Indexpage> {
                       child: Text(
                         "01.",
                         style: TextStyle(
-                          fontSize: fontSizeLarge,
+                          fontSize: fontSizeExtraLarge,
                           fontFamily: "AstaSans",
                           fontWeight: FontWeight.w400,
                           color: Colors.black87,
@@ -61,7 +61,7 @@ class _IndexpageState extends State<Indexpage> {
                         ),
                       ),
                     ),
-                    SizedBox(height: shortScreenSize * 0.06),
+                    SizedBox(height: shortScreenSize * 0.04),
                     Text(
                       "Graphic\nDesign",
                       style: TextStyle(
@@ -122,7 +122,7 @@ class _IndexpageState extends State<Indexpage> {
                       child: Text(
                         "02.",
                         style: TextStyle(
-                          fontSize: fontSizeLarge,
+                          fontSize: fontSizeExtraLarge,
                           fontFamily: "AstaSans",
                           fontWeight: FontWeight.w400,
                           color: Colors.black87,
@@ -130,7 +130,7 @@ class _IndexpageState extends State<Indexpage> {
                         ),
                       ),
                     ),
-                    SizedBox(height: shortScreenSize * 0.06),
+                    SizedBox(height: shortScreenSize * 0.04),
                     Text(
                       "Public\nPoster",
                       style: TextStyle(
@@ -191,7 +191,7 @@ class _IndexpageState extends State<Indexpage> {
                       child: Text(
                         "03.",
                         style: TextStyle(
-                          fontSize: fontSizeLarge,
+                          fontSize: fontSizeExtraLarge,
                           fontFamily: "AstaSans",
                           fontWeight: FontWeight.w400,
                           color: Colors.black87,
@@ -199,7 +199,7 @@ class _IndexpageState extends State<Indexpage> {
                         ),
                       ),
                     ),
-                    SizedBox(height: shortScreenSize * 0.06),
+                    SizedBox(height: shortScreenSize * 0.04),
                     Text(
                       "Animation\n",
                       style: TextStyle(

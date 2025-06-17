@@ -6,6 +6,7 @@ import 'package:pofol/IndexPage_3.dart';
 import 'IntroducePage.dart';
 import 'IndexPage.dart';
 import 'IndexPage_1.dart';
+import 'IndexPage1_Sub1.dart';
 
 void main() {
   runApp(CustomAlignedRow());
@@ -46,7 +47,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
     final PageController _controller = PageController();
     int _currentPage = 0;
 
-    final List<String> pages = ["main", "1", "2", "3", "4", "5"];
+    final List<String> pages = ["main", "1", "2", "3", "4", "5", "6"];
 
     final List<PortfolioItem> items = [
       PortfolioItem(
@@ -100,11 +101,13 @@ StatefulWidget? getPage(String pageName) {
     case "2":
       return Indexpage();
     case "3":
-      return IndexpageSub1();
+      return Indexpage1();
     case "4":
-      return IndexpageSub2();
+      return Indexpage2();
     case "5":
-      return IndexpageSub3();
+      return Indexpage3();
+    case "6":
+      return Indexpage1Sub1();
     default:
       return DefaultPage();
   }
