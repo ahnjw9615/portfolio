@@ -1,39 +1,33 @@
 import 'package:flutter/material.dart';
 
-class IndexpageSub1 extends StatefulWidget {
-  const IndexpageSub1({super.key});
+class IndexpageSub3 extends StatefulWidget {
+  const IndexpageSub3({super.key});
 
   @override
-  State<IndexpageSub1> createState() => _IndexpageSub1State();
+  State<IndexpageSub3> createState() => _IndexpageSub3State();
 }
 
-class _IndexpageSub1State extends State<IndexpageSub1> {
+class _IndexpageSub3State extends State<IndexpageSub3> {
   @override
   Widget build(BuildContext context) {
     final shortScreenSize = MediaQuery.of(context).size.shortestSide;
     double fontSizeSmall = shortScreenSize * 0.027;
     double fontSizeSemiMedium = shortScreenSize * 0.048;
-    double fontSizeMedium = shortScreenSize * 0.054;
+    double fontSizeMedium = shortScreenSize * 0.05;
     double fontSizeLarge = shortScreenSize * 0.14;
 
     return Container(
-      color: Color.fromRGBO(247, 247, 247, 1),
+      color: Color.fromRGBO(46, 46, 46, 1),
       child: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(shortScreenSize * 0.05),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
+              Spacer(),
               Flexible(
                 flex: 2,
-                fit: FlexFit.tight,
-                child: Container(
-                ),
-              ),
-              Flexible(
-                flex: 2,
-                fit: FlexFit.tight,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,80 +35,70 @@ class _IndexpageSub1State extends State<IndexpageSub1> {
                     Padding(
                       padding: EdgeInsets.all(shortScreenSize * 0.005),
                       child: Text(
-                        "01.",
+                        "03.",
                         style: TextStyle(
                           fontSize: fontSizeLarge,
                           fontFamily: "AstaSans",
                           fontWeight: FontWeight.w400,
-                          color: Colors.black87,
+                          color: Colors.white,
                           letterSpacing: 0.3,
                         ),
                       ),
                     ),
                     SizedBox(height: shortScreenSize * 0.04),
                     Text(
-                      "Graphic\nDesign",
+                      "Animation",
                       style: TextStyle(
                         height: 1.1,
                         fontSize: fontSizeMedium,
                         fontFamily: "IBMPlexSans",
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black87,
+                        fontWeight: FontWeight.w300,
+                        color: Colors.white,
                         letterSpacing: 0.2,
                       ),
                     ),
-                    SizedBox(height: shortScreenSize * 0.1),
+                    SizedBox(height: shortScreenSize * 0.17),
                     Text(
-                      "Form & Texture",
+                      "Star Maker",
                       style: TextStyle(
                         fontSize: fontSizeSmall,
                         fontFamily: "IBMPlexSans",
                         fontWeight: FontWeight.w200,
-                        color: Colors.black87,
-                        letterSpacing: 0.2,
+                        color: Colors.white70,
+                        letterSpacing: 0.3,
                       ),
                     ),
                     SizedBox(height: shortScreenSize * 0.02),
                     Text(
-                      "Color",
+                      "Journey",
                       style: TextStyle(
                         fontSize: fontSizeSmall,
                         fontFamily: "IBMPlexSans",
                         fontWeight: FontWeight.w200,
-                        color: Colors.black87,
-                        letterSpacing: 0.2,
+                        color: Colors.white70,
+                        letterSpacing: 0.3,
                       ),
                     ),
-                    SizedBox(height: shortScreenSize * 0.02),
-                    Text(
-                      "Expression",
-                      style: TextStyle(
-                        fontSize: fontSizeSmall,
-                        fontFamily: "IBMPlexSans",
-                        fontWeight: FontWeight.w200,
-                        color: Colors.black87,
-                        letterSpacing: 0.2,
-                      ),
-                    ),
-                    SizedBox(height: shortScreenSize * 0.03),
+                    SizedBox(height: shortScreenSize * 0.13),
                   ],
                 ),
               ),
               Flexible(
-                flex: 5,
-                fit: FlexFit.tight,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/images/title_1.png',
-                      width: shortScreenSize * 0.4,
+                      'assets/images/title_3_white.png',
+                      width: shortScreenSize * 0.12,
                       fit: BoxFit.contain,
                     ),
-                    SizedBox(height: shortScreenSize * 0.2,)
+                    SizedBox(height: shortScreenSize * 0.57,)
                   ],
                 )
               ),
+              SizedBox(
+                width: shortScreenSize * 0.07,
+              )
             ],
           ),
         ),

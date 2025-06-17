@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:pofol/IndexPage_2.dart';
+import 'package:pofol/IndexPage_3.dart';
 import 'IntroducePage.dart';
 import 'IndexPage.dart';
 import 'IndexPage_1.dart';
@@ -44,7 +46,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
     final PageController _controller = PageController();
     int _currentPage = 0;
 
-    final List<String> pages = ["main", "1", "2", "3"];
+    final List<String> pages = ["main", "1", "2", "3", "4", "5"];
 
     final List<PortfolioItem> items = [
       PortfolioItem(
@@ -99,8 +101,12 @@ StatefulWidget? getPage(String pageName) {
       return Indexpage();
     case "3":
       return IndexpageSub1();
+    case "4":
+      return IndexpageSub2();
+    case "5":
+      return IndexpageSub3();
     default:
-      return Introducepage();
+      return DefaultPage();
   }
 }
 
@@ -295,6 +301,23 @@ class MainPage extends StatelessWidget {
     );
   }
 }
+
+class DefaultPage extends StatefulWidget {
+  const DefaultPage({super.key});
+
+  @override
+  State<DefaultPage> createState() => _DefaultPageState();
+}
+
+class _DefaultPageState extends State<DefaultPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Color.fromRGBO(247, 247, 247, 1),
+    );
+  }
+}
+
 
 class PortfolioItem {
   final String title;

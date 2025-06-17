@@ -132,6 +132,21 @@ flutter:
         - asset: assets/fonts/OpenSans_SemiCondensed-ExtraBold.ttf
           weight: 900
 
+    - family: AstaSans
+      fonts:
+        - asset: assets/fonts/AstaSans-Light.ttf
+          weight: 100
+        - asset: assets/fonts/AstaSans-Regular.ttf
+          weight: 300
+        - asset: assets/fonts/AstaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/AstaSans-SemiBold.ttf
+          weight: 700
+        - asset: assets/fonts/AstaSans-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/AstaSans-ExtraBold.ttf
+          weight: 900
+
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
