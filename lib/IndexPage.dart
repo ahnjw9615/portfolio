@@ -1,0 +1,259 @@
+import 'package:flutter/material.dart';
+
+class Indexpage extends StatefulWidget {
+  const Indexpage({super.key});
+
+  @override
+  State<Indexpage> createState() => _IndexpageState();
+}
+
+class _IndexpageState extends State<Indexpage> {
+  @override
+  Widget build(BuildContext context) {
+    final shortScreenSize = MediaQuery.of(context).size.shortestSide;
+    double fontSizeSmall = shortScreenSize * 0.022;
+    double fontSizeSemiMedium = shortScreenSize * 0.048;
+    double fontSizeMedium = shortScreenSize * 0.05;
+    double fontSizeLarge = shortScreenSize * 0.09;
+
+    return Container(
+      color: Color.fromRGBO(247, 247, 247, 1),
+      child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.all(shortScreenSize * 0.05),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Flexible(
+                flex: 2,
+                fit: FlexFit.tight,
+                child: Container(
+                  child: Text(
+                    "Index",
+                    style: TextStyle(
+                      fontSize: fontSizeLarge,
+                      fontFamily: "OpenSansCondensed",
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black87,
+                      letterSpacing: 0.8,
+                    ),
+                  ),
+                ),
+              ),
+              Flexible(
+                flex: 2,
+                fit: FlexFit.tight,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(shortScreenSize * 0.005),
+                      child: Text(
+                        "01.",
+                        style: TextStyle(
+                          fontSize: fontSizeLarge,
+                          fontFamily: "Montserrat",
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black87,
+                          letterSpacing: 1.3,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                    Text(
+                      "Graphic\nDesign",
+                      style: TextStyle(
+                        height: 1.1,
+                        fontSize: fontSizeMedium,
+                        fontFamily: "OpenSansSemiCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 0.7,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                    Text(
+                      "Form & Texture",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.02),
+                    Text(
+                      "Color",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.02),
+                    Text(
+                      "Expression",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                  ],
+                ),
+              ),
+              Flexible(
+                flex: 2,
+                fit: FlexFit.tight,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(shortScreenSize * 0.005),
+                      child: Text(
+                        "02.",
+                        style: TextStyle(
+                          fontSize: fontSizeLarge,
+                          fontFamily: "Montserrat",
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black87,
+                          letterSpacing: 1.3,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                    Text(
+                      "Public\nPoster",
+                      style: TextStyle(
+                        height: 1.1,
+                        fontSize: fontSizeMedium,
+                        fontFamily: "OpenSansSemiCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 0.7,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                    Text(
+                      "Design Award",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.02),
+                    Text(
+                      "",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.02),
+                    Text(
+                      "",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                  ],
+                ),
+              ),
+              Flexible(
+                flex: 2,
+                fit: FlexFit.tight,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(shortScreenSize * 0.005),
+                      child: Text(
+                        "03.",
+                        style: TextStyle(
+                          fontSize: fontSizeLarge,
+                          fontFamily: "Montserrat",
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black87,
+                          letterSpacing: 1.3,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                    Text(
+                      "Animation\n",
+                      style: TextStyle(
+                        height: 1.1,
+                        fontSize: fontSizeMedium,
+                        fontFamily: "OpenSansSemiCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 0.1,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                    Text(
+                      "Star Maker",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.02),
+                    Text(
+                      "Journey",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.02),
+                    Text(
+                      "",
+                      style: TextStyle(
+                        fontSize: fontSizeSmall,
+                        fontFamily: "OpenSansCondensed",
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                    SizedBox(height: shortScreenSize * 0.06),
+                  ],
+                ),
+              ),
+              //Flexible(flex: 1, fit: FlexFit.tight, child: Container()),
+              //Flexible(flex: 1, child: Container()),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
