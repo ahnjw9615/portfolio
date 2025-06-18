@@ -201,7 +201,7 @@ class _IndexpageState extends State<Indexpage> {
                     ),
                     SizedBox(height: shortScreenSize * 0.04),
                     Text(
-                      "Animation\n",
+                      "Animation\n ",
                       style: TextStyle(
                         height: 1.1,
                         fontSize: fontSizeMedium * 0.9,
