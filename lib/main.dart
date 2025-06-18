@@ -131,7 +131,7 @@ class MainPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              height: shortScreenSize * 0.6,
+              height: shortScreenSize * 0.7,
               child: Padding(
                 padding: EdgeInsets.only(
                   top: shortScreenSize * 0.13,
