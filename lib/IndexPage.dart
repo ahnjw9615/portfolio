@@ -204,7 +204,7 @@ class _IndexpageState extends State<Indexpage> {
                       "Animation\n",
                       style: TextStyle(
                         height: 1.1,
-                        fontSize: fontSizeMedium * 0.8,
+                        fontSize: fontSizeMedium * 0.9,
                         fontFamily: "IBMPlexSans",
                         fontWeight: FontWeight.w400,
                         color: Colors.black87,
